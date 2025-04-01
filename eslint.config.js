@@ -16,7 +16,8 @@ export default [
       },
     },
     rules: {
-      'prettier/prettier': 'error',
+      'prettier/prettier': ['error', { endOfLine: 'auto' }],
+      // 'prettier/prettier': 'error',
     },
   },
   pluginJs.configs.recommended,
