@@ -17,9 +17,13 @@
   //container
   --container-padding: 15px;
   --container-width: 1200px;
+  @include mini-desktop {
+    --container-width: 1000px;
+  }
   //head scroll
   --head-scroll: #7270701f;
-
+  // overwiev-colors
+  --overview-bg-color: #1d1e25;
   //transition
   --transition: 0.2s ease-in-out;
 
@@ -41,4 +45,6 @@
   --success-color-70: #e2f8f033; // overview colors
   --black-bg-color: #18181d;
   --head-scroll: #2322226f;
+  // overwiev-colors
+  --overview-bg-color: #18181d;
 }
