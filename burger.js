@@ -20,3 +20,17 @@ export const useBurger = () => {
 
   overlay.addEventListener('click', closeBurgerMenu);
 };
+
+// Получаем шапку
+const header = document.querySelector('.header');
+
+// Порог скролла, после которого добавляется фон (например, 10px)
+const scrollThreshold = 10;
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > scrollThreshold) {
+    header.classList.add('header--scrolled');
+  } else {
+    header.classList.remove('header--scrolled');
+  }
+});

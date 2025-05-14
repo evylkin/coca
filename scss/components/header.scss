@@ -1,5 +1,18 @@
 .header {
+  position: fixed;
+  z-index: var(--z-index-3);
+  top: 0;
+  left: 0;
+  right: 0;
+ transition: background-color 0.3s ease;
   padding: 26px 0 22px;
+  &--scrolled {
+        padding: 17px 0 12px;
+  background-color: var(--head-scroll); /* Полупрозрачный белый */
+  /* Или любой другой цвет, например: */
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  backdrop-filter: blur(5px); /* Добавит размытие под шапкой (опционально) */
+}
   &__inner {
     @include flex-all-between;
   }
