@@ -1,0 +1,195 @@
+.features {
+  padding: 160px 0 94px;
+  @include mobile {
+    padding: 80px 0 34px;
+  }
+  &__container {
+    @include flex-all-center;
+    gap: 58px;
+    @include mini-desktop {
+      flex-direction: column;
+      align-items: start;
+    }
+    @include mobile {
+      align-items: center;
+    }
+    @include small-mobile {
+      gap: 40px;
+    }
+  }
+  &__left {
+    position: relative;
+  }
+  &__stats {
+    background-color: #fff;
+    position: absolute;
+    right: 36px;
+    bottom: 40px;
+    padding: 18px;
+    max-width: 290px;
+    @include mobile {
+      right: 11px;
+      bottom: 13px;
+      padding: 14px;
+      max-width: 260px;
+      @include small-mobile {
+        max-width: 200px;
+      }
+    }
+    &-img {
+      max-width: 70px;
+      @include small-mobile {
+        max-width: 55px;
+      }
+    }
+    &-head {
+      @include flex-all-between;
+      margin-bottom: 19px;
+      @include small-mobile {
+        margin-bottom: 10px;
+      }
+    }
+    &-title {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 150%;
+      color: #1d1e25;
+      @include small-mobile {
+        font-size: 14px;
+      }
+    }
+    &-item {
+      @include flex-all-center;
+      gap: 26px;
+      @include small-mobile {
+        gap: 16px;
+      }
+      &:not(:last-child) {
+        padding-bottom: 23px;
+        border-bottom: 0.73px solid #ededed;
+        @include small-mobile {
+          padding-bottom: 15px;
+        }
+      }
+      &:last-child {
+        @include small-mobile {
+          padding-top: 15px;
+        }
+      }
+      &-info {
+        &-title {
+          font-weight: 500;
+          font-size: 10px;
+          line-height: 150%;
+          color: #7e8492;
+          margin-bottom: 6px;
+        }
+        &-price {
+          @include flex-all-center;
+          justify-content: start;
+          gap: 17px;
+          margin-bottom: 9px;
+          @include small-mobile {
+            margin-bottom: 5px;
+          }
+
+          &-num {
+            font-weight: 700;
+            font-size: 23px;
+            line-height: 120%;
+            color: #1d1e25;
+            @include small-mobile {
+              font-size: 18px;
+            }
+          }
+          &-proc {
+            @include flex-all-center;
+            gap: 5px;
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 150%;
+            text-align: center;
+            color: #1d1e25;
+          }
+        }
+        &-descr {
+          max-width: 136px;
+          font-weight: 400;
+          font-size: 8px;
+          color: #7e8492;
+        }
+      }
+    }
+  }
+  &__right {
+    max-width: 557px;
+    @include mini-desktop {
+      max-width: 800px;
+    }
+  }
+  &__title {
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.04em;
+    margin-bottom: 24px;
+    color: var(--neutral-color-100);
+    @include mobile {
+      max-width: 500px;
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  &__descr {
+    max-width: 360px;
+    font-weight: 500;
+    line-height: 178%;
+    color: #7e8492;
+    margin-bottom: 40px;
+    @include mini-desktop {
+      max-width: 700px;
+    }
+    @include tablet {
+      max-width: 550px;
+    }
+    @include mobile {
+      max-width: 400px;
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    @include small-mobile {
+      margin-bottom: 20px;
+    }
+  }
+  &__list {
+    @include flex-all-center;
+    max-width: 390px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 178%;
+    color: var(--neutral-color-100);
+    @include small-mobile {
+      line-height: 170%;
+    }
+    &:not(:last-child) {
+      margin-bottom: 32px;
+      @include small-mobile {
+        margin-bottom: 20px;
+      }
+    }
+
+    &::before {
+      content: '';
+      display: inline-block;
+      background: url('./icons/arrow-features.svg');
+      margin-right: 19px;
+      width: 24px;
+      height: 24px;
+      padding-right: 20px;
+      @include small-mobile {
+        margin-right: 10px;
+      }
+    }
+  }
+}

@@ -1,14 +1,14 @@
-.button{
-    &-form{
-width: 175px;
-height: 56px;
-transition: opacity var(--transition);
-@include mobile{
-    width: 150px;
-height: 50px;
-}
-&:hover{
-    opacity: 0.9;
-}
-}
+.button {
+  &-form {
+    width: 175px;
+    height: 56px;
+    transition: opacity var(--transition);
+    @include mobile {
+      width: 150px;
+      height: 50px;
     }
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
