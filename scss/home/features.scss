@@ -37,7 +37,10 @@
       }
     }
     &-img {
-      max-width: 70px;
+      @include tablet {
+        max-width: 70px;
+      }
+
       @include small-mobile {
         max-width: 55px;
       }
