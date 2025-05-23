@@ -1,0 +1,128 @@
+.testimonials {
+  &__container {
+    padding: 69px 0 160px;
+    @include mobile {
+      padding: 20px 0 100px;
+    }
+  }
+  &__head {
+    @include flex-all-between;
+    margin-bottom: 48px;
+    @include tablet {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+    }
+
+    &-title {
+      max-width: 530px;
+      font-weight: 600;
+      letter-spacing: -0.04em;
+      color: var(--natural-color-100);
+    }
+    &-descr {
+      font-weight: 500;
+      max-width: 376px;
+      line-height: 178%;
+      color: #7e8492;
+    }
+  }
+  &__stars {
+    @include flex-align-center;
+    align-items: start;
+    gap: 8px;
+    margin-bottom: 16px;
+    &-num {
+      display: inline-block;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 162%;
+      color: var(--natural-color-100);
+    }
+  }
+  &__slider-wrapper {
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 115px;
+      height: 77px;
+      background: url('../../../img/icon-symbol.svg');
+      transform: translateY(15px);
+      @include mini-desktop {
+        transform: translateY(-10px);
+      }
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+  &__slider {
+    max-width: 898px;
+    @include mobile {
+      max-width: 300px;
+    }
+  }
+  &__comment {
+    &-text {
+      font-weight: 500;
+      letter-spacing: -0.03em;
+      color: var(--natural-color-100);
+      margin-bottom: 40px;
+      @include mobile {
+        font-size: 19px;
+      }
+    }
+    &-author {
+      @include flex-align-center;
+      gap: 24px;
+      &-info {
+        font-style: normal;
+      }
+      &-name {
+        display: block;
+        font-weight: 600;
+        line-height: 144%;
+        color: var(--natural-color-100);
+      }
+      &-post {
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 162%;
+        color: #7e8492;
+      }
+    }
+  }
+  &__btns {
+    @include flex-align-center;
+    justify-content: flex-end;
+    gap: 16px;
+    transform: translateY(-55px);
+    @include mini-desktop {
+      transform: translateY(0px);
+      padding-right: 10px;
+    }
+  }
+  &__btn {
+    @include flex-all-center;
+    border: 1px solid var(--neutral-color-40);
+    border-radius: 50%;
+    padding: 16px;
+    width: 50px;
+    height: 50px;
+    transition:
+      background-color var(--transition),
+      border-color var(--transition);
+
+    &:hover {
+      background-color: var(--neutral-color-100);
+      border-color: var(--neutral-color-100);
+      & svg path {
+        fill: var(--neutral-color-10);
+      }
+    }
+    &--next {
+      transform: rotate(-180deg);
+    }
+  }
+}

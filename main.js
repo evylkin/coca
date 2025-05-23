@@ -5,5 +5,6 @@ import { useTheme } from './theme';
 useTheme();
 import { useBurger } from './burger';
 useBurger();
-import { useInsightSlider } from './slider';
+import { useInsightSlider, useTestimonialsSlider } from './slider';
 useInsightSlider();
+useTestimonialsSlider();
