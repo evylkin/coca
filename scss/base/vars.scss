@@ -26,7 +26,8 @@
   --overview-bg-color: #1d1e25;
   //transition
   --transition: 0.2s ease-in-out;
-
+  --primary-color-30: #1463ff;
+  --primary-color-60: #1463ff;
   --z-index-0: -1;
   --z-index-1: 1;
   --z-index-2: 2;
@@ -36,10 +37,12 @@
 
 [data-theme='dark'] {
   // neutral colors
+  --neutral-color-90: #18181d;
   --neutral-color-150: #fff;
   --neutral-color-10: #1d1e25;
   --neutral-color-100: #fff;
   --neutral-color-140: #fff; // logo colors
+  --primary-color-60: #4b628f;
   --logo-color-text: #fff;
   --logo-color-circle: #343542; // success colors
   --success-color-70: #e2f8f033; // overview colors
