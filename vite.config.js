@@ -3,10 +3,12 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import injectHTML from 'vite-plugin-html-inject';
 import { ViteMinifyPlugin } from 'vite-plugin-minify';
 export default defineConfig({
+  base: '/coca/',
   server: {
     port: 3000,
     open: true,
   },
+  publicDir: 'icons',
   build: {
     outDir: '../build',
     emptyOutDir: true,
