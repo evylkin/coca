@@ -33,6 +33,8 @@
   --z-index-2: 2;
   --z-index-3: 3;
   --z-index-4: 4;
+  // arrow
+  --arrow-color: #161a34;
 }
 
 [data-theme='dark'] {
@@ -50,4 +52,6 @@
   --head-scroll: #2322226f;
   // overwiev-colors
   --overview-bg-color: #18181d;
+  // arrow
+  --arrow-color: #fff;
 }
