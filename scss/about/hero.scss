@@ -4,7 +4,7 @@
     content: '';
     position: absolute;
     left: 5%;
-    bottom: 27%;
+    bottom: 56%;
     z-index: var(--z-index-0);
     display: inline-block;
     border-radius: 100%;
@@ -16,18 +16,12 @@
     @include mini-desktop {
       width: 351px;
       height: 351px;
+      bottom: 64%;
     }
     @include tablet {
       left: 5%;
-      bottom: 40%;
       width: 300px;
       height: 300px;
-    }
-    @include small-tablet {
-      bottom: 50%;
-    }
-    @include mobile {
-      bottom: 55%;
     }
   }
   @include mobile {

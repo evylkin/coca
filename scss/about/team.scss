@@ -1,0 +1,136 @@
+.team {
+  &__container {
+    padding: 160px 0;
+    @include small-tablet {
+      padding: 100px 0;
+    }
+    @include mobile {
+      padding: 80px 0;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0px;
+      bottom: 41%;
+      z-index: var(--z-index-0);
+      display: inline-block;
+      border-radius: 100%;
+      background: #e2f8f0b3;
+      filter: blur(180px);
+      width: 551px;
+      height: 551px;
+      opacity: 0.2;
+      @include mini-desktop {
+        bottom: 47%;
+        width: 351px;
+        height: 351px;
+      }
+    }
+  }
+  &__title {
+    max-width: 903px;
+    margin-bottom: 24px;
+    &-about {
+      max-width: 626px;
+    }
+  }
+  &__subtitle {
+    max-width: 490px;
+    line-height: 178%;
+    color: #7e8492;
+    margin-bottom: 80px;
+    @include small-tablet {
+      max-width: 340px;
+      margin-bottom: 40px;
+    }
+  }
+  &__slider {
+    position: relative;
+    margin-bottom: 100px;
+    @include mobile {
+      margin-bottom: 60px;
+    }
+    &-btn {
+      @include flex-all-center;
+      position: absolute;
+      z-index: var(--z-index-2);
+      top: 183px;
+      left: 32.5%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      background-color: #fff;
+      width: 80px;
+      height: 80px;
+      cursor: pointer;
+      @include mini-desktop {
+        top: 138px;
+        left: 32.5%;
+      }
+      @include tablet {
+        top: 163px;
+        left: 39.5%;
+      }
+      @include small-tablet {
+        top: 159px;
+        left: 49.5%;
+      }
+      @include mobile {
+        display: flex;
+        width: 60px;
+        height: 60px;
+        top: 35%;
+        left: 0.5%;
+        & svg {
+          width: 30px;
+        }
+      }
+    }
+  }
+  &__slide {
+    &-info {
+      @include flex-align-center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+    &-name {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 150%;
+      color: var(--neutral-color-100);
+    }
+    &-img {
+      width: 100%;
+      margin-bottom: 16px;
+      @include mini-desktop {
+      }
+    }
+    &-post {
+      color: #7e8492;
+    }
+  }
+  &__info {
+    @include flex-align-center;
+    justify-content: space-between;
+    gap: 30px;
+    @include mini-desktop {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+  &__descr {
+    max-width: 506px;
+    color: #7e8492;
+    line-height: 178%;
+    margin-bottom: 21px;
+  }
+  &__btn {
+    padding: 5px;
+    font-weight: 600;
+    line-height: 150%;
+    color: var(--neutral-color-100);
+    transition: opacity var(--transition);
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
