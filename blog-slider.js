@@ -20,3 +20,23 @@ export const useBlogSlider = () => {
     },
   });
 };
+export const useArticleSlider = () => {
+  new Swiper('.articles-slider__wrapper', {
+    spaceBetween: 32,
+    slidesPerView: 1,
+    breakpoints: {
+      576: {
+        slidesPerView: 1.5,
+      },
+      768: {
+        slidesPerView: 2.5,
+      },
+    },
+    loop: true,
+    modules: [Navigation],
+    navigation: {
+      prevEl: '.articles-slider__btn--prev',
+      nextEl: '.articles-slider__btn--next',
+    },
+  });
+};
