@@ -1,5 +1,8 @@
 .articles-slider {
   padding: 160px 0;
+  @include mobile {
+    padding: 90px 0;
+  }
   &__container {
     padding-right: 0;
     position: relative;
@@ -14,6 +17,9 @@
     color: #7e8492;
     max-width: 400px;
     margin-bottom: 80px;
+    @include mobile {
+      margin-bottom: 52px;
+    }
   }
   &__btns {
     content: '';
@@ -25,6 +31,12 @@
     align-items: center;
     gap: 16px;
     transform: translateY(-70px);
+    @include mobile {
+      position: relative;
+      right: 0px;
+      top: 0%;
+      transform: translateY(-30px);
+    }
   }
   &__btn {
     cursor: pointer;
